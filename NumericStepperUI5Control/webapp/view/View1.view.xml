@@ -1,0 +1,36 @@
+<mvc:View controllerName="net.devportfolio.custom.control.NumericStepper.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Custom="net.devportfolio.custom.control.NumericStepper.control">
+	<App>
+		<pages>
+			<Page title="NumericStepper Custom UI Control">
+				<content>
+					<Table footerText=" " id="oTable" items="{/products}" noDataText="{i18n>NoDataText}" width="auto" inset="true">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="My Products"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="ID"/>
+							</Column>
+							<Column>
+								<Text text="Product"/>
+							</Column>
+							<Column>
+								<Text text="Quantity"/>
+							</Column>
+						</columns>
+						<ColumnListItem id="items">
+							<cells>
+								<Text text="{id}"/>
+								<Text text="{product}"/>
+								<Custom:NumericStepper change="onQuantityChange" value="{quantity}" width="5em"/>
+							</cells>
+						</ColumnListItem>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

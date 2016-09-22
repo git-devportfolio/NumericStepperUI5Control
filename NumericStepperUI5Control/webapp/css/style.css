@@ -1,0 +1,36 @@
+/* Enter your custom styles here */
+
+/* CUSTOM CONTROLS
+         ========================================================================== */
+
+.oNumericStepper {}
+.oNumericStepper input {
+    font-weight: bold;
+    color: #545658;
+    font-size: 1.1em;
+    border-radius: 3px;
+    text-align: center;
+}
+.oNumericStepper button > div {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1em;
+    border-radius: 50%;
+    border: 1px solid #ababab;
+}
+.oNumericStepper button.oAdd,
+.oNumericStepper button.oSubstract {
+    top: -0.2em;
+}
+.oNumericStepper button.oAdd span,
+.oNumericStepper button.oSubstract span {
+    font-size: 1.3em;
+    /*font-weight: bold;*/
+    line-height: 3rem;
+}
+.oNumericStepper .oAdd span {
+    color: #A6C83D;
+}
+.oNumericStepper button.oSubstract span {
+    color: #C93030;
+}
